@@ -1,5 +1,5 @@
 # my_first_repo
-#おみくじ
+#分岐を用いたおみくじ
 import random
 
 num = random.randint(0, 60)
