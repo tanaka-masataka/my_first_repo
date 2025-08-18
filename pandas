@@ -1,0 +1,20 @@
+import pandas as pd
+
+data = {
+    "name" : ["太郎", "花子"],
+    "age" : [20, 22]
+}
+
+df = pd.DataFrame(data)
+
+print(df['age'])
+print(df.head(1))
+print(df[df["age"]>20])
+df['gender'] = ['男', '女']
+
+df.loc[df["name"] == "太郎", "age"] = 28
+df.loc[df["name"] == "花子" , "gender"] = "男"
+print(df)
+
+average_age = df["age"].mean()
+print(average_age)
