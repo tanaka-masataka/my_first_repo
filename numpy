@@ -82,3 +82,10 @@ arr = np.array([2, 5, 8, 1, 9, 3 ,6])
 arr_count = np.sum(arr > 5) #sumがブール配列になったもの(True)を足していくことで数を数えることができる
 print(arr_count)
 
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+c = np.array([7, 8, 9])
+
+result = np.vstack([a, b, c])
+print(result)
+
