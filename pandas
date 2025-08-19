@@ -18,3 +18,34 @@ print(df)
 
 average_age = df["age"].mean()
 print(average_age)
+
+# エクセルファイルのパス
+file_path = "C:/Users/tanak/onedrive/data1.xlsx"
+
+# データを読み込む
+data = pd.read_excel(file_path)
+df = pd.DataFrame(data)
+
+#ageを抽出
+age_clom = df["age"]
+
+#職業を追加
+df["occupation"] = ["教師", "医者", "建築士"]
+
+#ageの平均値を求める
+avg_age = df["age"].mean()
+print(avg_age)
+
+#特定の人を抽出する
+filter_age = df[df["age"]>20]
+print(filter_age)
+
+filter_blood_O = df[df['blood'] == 'O']
+print(filter_blood_O)
+
+#列の並び替え(昇順)
+df_sorted = df.sort_values(by='age')
+print(df_sorted)
+
+df_sort = df.sort_values(by=['name', 'age'])
+print(df_sort)
