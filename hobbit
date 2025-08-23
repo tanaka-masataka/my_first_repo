@@ -1,1 +1,12 @@
-# nothing repo
+# N 個の正の整数 A₁, A₂, ..., Aₙ が書かれています。 すぬけ君は、黒板に書かれている整数の最大値と最小値が異なるとき、次の操作を行うことができます。 黒板に書かれているすべての整数から、最小値を引いた数に置き換える。 すぬけ君は最大で何回この操作を行うことができるかを求めてください。 すべての数が同じになった時点で終了します。
+N = int(input())
+A = list(map(int, input().split()))
+
+count = 0
+
+while len(set(A)) != 1 :
+  A = [a if a == min(A) else a - min(A) for a in A ]
+  count += 1
+  
+print(count)
+  
