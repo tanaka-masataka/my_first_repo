@@ -4,7 +4,7 @@ A = list(map(int, input().split()))
 
 count = 0
 
-while len(set(A)) != 1 :
+while len(set(A)) != 1 : #setは重複をなくす
   A = [a if a == min(A) else a - min(A) for a in A ]
   count += 1
   
