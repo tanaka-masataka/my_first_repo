@@ -9,4 +9,11 @@ while len(set(A)) != 1 : #setは重複をなくす
   count += 1
   
 print(count)
-  
+
+#回文を判定する
+s = str(input())
+if s[ :: -1] == s:
+    print("回文です")
+else :
+    print("回文ではありません")
+
