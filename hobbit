@@ -16,4 +16,15 @@ if s[ :: -1] == s:
     print("回文です")
 else :
     print("回文ではありません")
-
+#FizzBuzzの判定
+x = []
+for i in range(101) :
+    if i %15 == 0 :
+        x.append("FizzBuzz")
+    elif i %3 == 0 :
+        x.append("Fizz")
+    elif i %5 == 0:
+        x.append("Buzz")
+    else :
+        x.append(i)
+print(x)
