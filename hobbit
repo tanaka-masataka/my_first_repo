@@ -28,3 +28,34 @@ for i in range(101) :
     else :
         x.append(i)
 print(x)
+#リストと条件分岐の問題
+scores = [88, 73, 95, 62, 79]
+
+for score in scores :
+    if score >= 90 :
+        print("S")
+    elif score >= 80 :
+        print("A")
+    elif score >= 70 :
+        print("B")
+    elif score >= 60 :
+        print("C")
+    else :
+        print("D")
+
+scores = [88, 73, 95, 62, 79]
+
+for i, score in enumerate(scores, start=1):
+    if score >= 90:
+        grade = "S"
+    elif score >= 80:
+        grade = "A"
+    elif score >= 70:
+        grade = "B"
+    elif score >= 60:
+        grade = "C"
+    else:
+        grade = "F"
+
+    print(f"{i}人目の評価: {grade}")
+
